@@ -103,12 +103,16 @@ body.dark-theme{
   color: var(--first-color);
 }
 
-body.dark-theme .nav__btns1{
-  color: var(--title-text);
+body.dark-theme .ppt{
+  color: white;
 }
 
 .portfolio__img{
   border: 0.001rem solid whitesmoke;
+}
+
+body.dark-theme .nav__btns1{
+  color: var(--title-text);
 }
 
 /*==================== BASE ====================*/
@@ -176,10 +180,12 @@ img {
   margin-right: var(--mb-1-5);
 }
 
+
 .grid {
   display: grid;
   gap: 1.5rem;
 }
+
 
 .header {
   width: 100%;
@@ -190,7 +196,9 @@ img {
   background-color: var(--body-color);
 }
 
+
 /*==================== NAV ====================*/
+
 
 .nav{
   max-width: 968px;
@@ -200,11 +208,13 @@ img {
   align-items: center;
 }
 
+
 .nav__logo,
 .nav__toggle{
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
+
 
 .nav__logo:hover{
   color:var(--first-color)
@@ -233,6 +243,7 @@ img {
   }
 }
 
+
 .nav__list{
   grid-template-columns: repeat(3,1fr);
   gap: 2rem;
@@ -245,13 +256,12 @@ img {
   font-size: var(--small-font-size);
   color: var(--title-color);
   font-weight: var(--font-medium);
-
 }
+
 
 .nav__link:hover{
   color: var(--first-color);
 }
-
 
 .nav__icon{
   font-size: 1.2rem;
@@ -275,16 +285,13 @@ img {
   bottom: 0;
 }
 
-
 /* Active link */
-
 
 .active-link{
   color: var(--first-color);
 }
 
 /* Change background header */
-
 
 .scroll-header{
   box-shadow: 0 -1px 4px rgba(0,0,0,.15);
@@ -383,6 +390,16 @@ img {
   padding: 1rem;
   border-radius: .5rem;
   font-weight: var(--font-medium);
+}
+
+.button1{
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: .5rem;
+  font-weight: var(--font-medium);
+
 }
 
 .button:hover{
@@ -963,14 +980,11 @@ img {
   color:#fff;
 }
 
-.project__img{
-  width: 232px;
+.project__container img{
+  height: max-content;
 }
 
-.project:hover img{
-  
-    transform: scale(1.5);
-}
+
 
 /*==================== TESTIMONIAL ====================*/
 

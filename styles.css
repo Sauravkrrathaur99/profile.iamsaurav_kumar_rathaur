@@ -390,7 +390,9 @@ img {
 
 
 /*==================== BUTTONS ====================*/
-
+button{
+  border: none;
+}
 
 .button{
   display: inline-block;
@@ -1124,9 +1126,6 @@ img {
   margin-top: 0.8rem;
 }
 
-.testimonial__icon-star{
-  color: var(--first-color);
-}
 
 .swiper-container .swiper-pagination-testimonial{
   bottom: 0;
@@ -1685,6 +1684,10 @@ img {
 
   .contact__inputs{
     grid-template-columns: repeat(2,1fr);
+  }
+
+  .swiper-container .swiper-pagination-testimonial{
+    bottom: 0;
   }
 
 

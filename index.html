@@ -1365,7 +1365,7 @@
                         </div>
                     </div>
 
-                    <form onsubmit="Mail(); reset(); return false;" class="contact__form grid">
+                    <form id="form" onsubmit="sendmail(); reset(); return false;" class="contact__form grid">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
                                 <label for="" class="contact__label">Name</label>
@@ -1474,21 +1474,22 @@
 
         <script src="https://smtpjs.com/v3/smtp.js"></script>
         <script>
-            function Mail(){
-                let name = document.getA
-
-
+            function sendmail(){
+                let name = document.getElementById("name").value;
+                let email = document.getElementById("email").value;
+                let phone = document.getElementById("phone").value;
+                let message = document.getElementById("message").value;
 
                 Email.send({
                 Host : "smtp.elasticemail.com",
-                Username : "arecovery16@gmail.com",
-                Password : "C121DFF60146DEEFC4669277E80CEBCD238C",
-                To : 'sauravkr.rathaur99@outlook.in',
-                From : "arecovery16@gmail.com",
-                Subject : "New Contact Form Enquiry",
-                Body : "And this is the body"
+                Username : "service4u.carzone@gmail.com",
+                Password : "C862C54472010D2E81E16AE3C23FD4C59F2C",
+                To : 'sauravkr.rathaur99@gmail.com',
+                From : "service4u.carzone@gmail.com",
+                Subject : "Mail Form Contact Enquiry Form",
+                Body : "<b>Name: </b>" + name + "<br/> <b>User Email :</b>" + email + "<br/> <b>Contact Number :</b>" + phone + "<br/> <b>User Message :</b>" + message
             }).then(
-            message => alert(message)
+            message => alert("Thankyou For Contacting! Will revert you soon!")
             );
             }
         </script>

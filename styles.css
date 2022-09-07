@@ -1235,21 +1235,7 @@ button{
   justify-content: center;
 }
 
-.count1{
-  font-size: 15px;
-  text-align: center;
-  color: orange;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 1rem;
-  font-weight: bolder;
-}
 
-.count h1
-{
-  padding: 10px;
-}
 
 .footer__title,
 .footer__subtitle,

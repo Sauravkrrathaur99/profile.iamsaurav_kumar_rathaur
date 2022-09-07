@@ -213,3 +213,10 @@ themeButton.addEventListener('click', () => {
 
 
 
+function websiteVisits(response){
+    document.querySelector("#counts").textContent = response.value;
+}
+
+
+
+

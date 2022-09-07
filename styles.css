@@ -1226,17 +1226,6 @@ button{
   margin-top: var(--mb-3);
 }
 
-.count{
-  font-size: 15px;
-  text-align: center;
-  color: orange;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-
 .footer__title,
 .footer__subtitle,
 .footer__links,

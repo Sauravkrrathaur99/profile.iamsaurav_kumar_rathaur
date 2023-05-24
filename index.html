@@ -1112,7 +1112,34 @@
                 <div class="portfolio__container container swiper-container">
                     <div class="swiper-wrapper">
 
-                        <!--==================== PORTFOLIO 1 ====================-->
+
+                         <!--==================== PORTFOLIO 1 ====================-->
+
+                         <div class="portfolio__content grid swiper-slide">
+                            <img src="portfolio_8.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">ApnaEngineer (<a target="_blank" href="https://apnaengineer.in/">www.apnaengineer.in</a>)</h3>
+                                <p class="portfolio__description backend">
+                                    Online computer repair services offer comprehensive solutions for all your tech needs, which efficiently resolve issues and deliver reliable assistance. <br><span><b>Front-end:</b> HTML5, CSS3, Flexbox, BootStrap, JS<br><b>Back-end: </b> Python-Django, JavaScript, PostgreSQL</span>
+                                </p>
+
+                                <a href="https://apnaengineer.in/" target="_blank" class="button--flex button--smalll portfolio__button button1">
+                                    LogOn To:  www.apnaengineer.in  
+                                    <i class="uil uil-arrow-right button_icon"></i>
+                                </a>
+
+                                <!-- <a href="https://1drv.ms/u/s!Aopl06VPjDPOphPgRcyfSnj9t_Ve?e=ymeUYV" target="_blank" class="ppt">
+                                    View>>
+                                    <i class="fa-solid fa-file-powerpoint button__icon1"></i>
+                                </a> -->
+                            </div>
+                        </div>
+
+
+
+
+                        <!--==================== PORTFOLIO 2 ====================-->
 
                         <div class="portfolio__content grid swiper-slide">
                             <img src="portfolio_7.png" alt="" class="portfolio__img">
@@ -1125,7 +1152,7 @@
                                 </p>
 
                                 <a href="https://collegerp4u.herokuapp.com/" target="_blank" class="button--flex button--smalll portfolio__button button1">
-                                    Live  
+                                    GitHub  
                                     <i class="uil uil-arrow-right button_icon"></i>
                                 </a>
 
@@ -1136,7 +1163,7 @@
                             </div>
                         </div>
 
-                        <!--==================== PORTFOLIO 2 ====================-->
+                        <!--==================== PORTFOLIO 3 ====================-->
 
                         <div class="portfolio__content grid swiper-slide">
                             <img src="portfolio_1.png" alt="" class="portfolio__img">
@@ -1159,7 +1186,7 @@
                             </div>
                         </div>
 
-                        <!--==================== PORTFOLIO 3 ====================-->
+                        <!--==================== PORTFOLIO 4 ====================-->
 
                         <div class="portfolio__content grid swiper-slide">
                             <img src="portfolio_2.png" alt="" class="portfolio__img">
@@ -1182,7 +1209,7 @@
                             </div>
                         </div>
 
-                        <!--==================== PORTFOLIO 4 ====================-->
+                        <!--==================== PORTFOLIO 5 ====================-->
 
                         <div class="portfolio__content grid swiper-slide">
                             
@@ -1204,7 +1231,7 @@
                         </div>
 
 
-                        <!--==================== PORTFOLIO 5 ====================-->
+                        <!--==================== PORTFOLIO 6 ====================-->
 
                         <div class="portfolio__content grid swiper-slide">
                             
@@ -1224,7 +1251,7 @@
                         </div>
 
 
-                         <!--==================== PORTFOLIO 6 ====================-->
+                         <!--==================== PORTFOLIO 7 ====================-->
 
                          <div class="portfolio__content grid swiper-slide">
                             
@@ -1244,7 +1271,7 @@
                         </div>
 
 
-                        <!--==================== PORTFOLIO 7 ====================-->
+                        <!--==================== PORTFOLIO 8 ====================-->
 
                         <div class="portfolio__content grid swiper-slide">
                             
@@ -1421,48 +1448,36 @@
             <section class="contact section" id="contact">
                 <h2 class="section__title">Contact Me</h2>
                 <span class="section__subtitle">Get in touch</span>
-
                 <div class="contact__container container grid">
                     <div>
                         <div class="contact__information">
                             <i class="uil uil-phone contact__icon"></i>
-
                             <div>
                                 <h3 class="cotact__title">Call Me</h3>
                                 <a href="tel:+918887169818"><span class="contact__subtitle">+91-8887169818</span></a>
                             </div>
                         </div>
-
-
                         <div class="contact__information">
                             <i class="uil uil-envelope contact__icon"></i>
-
                             <div>
                                 <h3 class="cotact__title">Email</h3>
                                 <a href="mailto:sauravkr.rathaur99@outlook.in?&subject=Recruitment%20||%20Hiring!! &body=Hey, Saurav Kumar Rathaur, I am here to talk regarding further recruitment process for our companies job description. Let's have a talk. Needed a quick respinse! Thankyou!!"><span class="contact__subtitle">sauravkr.rathaur99@outlook.in</span></a>
                             </div>
                         </div>
-                        
-
                         <div class="contact__information">
                             <i class="uil uil-map-marker contact__icon"></i>
-
                             <div>
                                 <h3 class="cotact__title">Location</h3>
                                 <span class="contact__subtitle">Gola Gokarannath - Lakhimpur Kheri</span>
                             </div>
                         </div>
                     </div>
-
-                    <form action="{% url 'contact' %}" method="POST" enctype="multipart/form-data" id="myForm" class="contact__form grid">
-                     
-                        {% csrf_token %}
-                        <div class="contact__inputs grid">
+                    <form action="https://formspree.io/f/xnqyydvg"  method="POST" enctype="multipart/form-data" id="myForm" class="contact__form grid">
+                        <div class="contact__inputs grid">  
                             <div class="contact__content">
                                 <label for="" class="contact__label">Name</label>
                                 <input type="text" id="name" name="name" class="contact__input">
                             </div>
-
                             <div class="contact__content">
                                 <label for="" class="contact__label">Email</label>
                                 <input type="email" required id="email" name="email" class="contact__input">
@@ -1472,18 +1487,12 @@
                             <label for="" class="contact__label">Phone</label>
                             <input type="number" id="phone" name="phone" required class="contact__input">
                         </div>
-
                         <div class="contact__content">
                             <label for="" class="contact__label">Message</label>
                             <textarea name="message" class="contact__input form-control" required></textarea>
-                            
-
                         </div>
-
                         <div>
-
-                            <button type="submit" onclick="submitForm()" class="button button--flex">Send Message <i class="uil uil-message button__icon"></i></button>
-                            
+                            <button type="submit"  class="button button--flex">Send Message <i class="uil uil-message button__icon"></i></button>
                         </div>
                     </form>
                 </div>
@@ -1565,7 +1574,7 @@
 
         <!-- typing animation -->
 
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
         <script>
             var typed = new Typed(".auto-type",{
@@ -1576,8 +1585,8 @@
             })
         </script>
 
-        <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
-        <!-- <script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
             function sendmail(){
                 let name = document.getElementById("name").value;
                 let email = document.getElementById("email").value;
@@ -1604,7 +1613,7 @@ portfolio_2.png
 }
     </script> -->
 
-    <script>
+    <!-- <script>
         function submitForm() {
           // Save a flag in localStorage to indicate that the form was submitted
           localStorage.setItem('formSubmitted', 'true');
@@ -1622,11 +1631,14 @@ portfolio_2.png
         };
       </script>
 
+
 <script>
     function showCertificateAlert() {
       alert("This Internship as TA is ongoing .. and thus the certificate for this internship is not yet released. It will be released on 30/09/2023.");
     }
     </script>
+
+
 
 
 

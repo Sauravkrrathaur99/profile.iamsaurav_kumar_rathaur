@@ -756,10 +756,10 @@ button{
 }
 
 
-.tech,
+/* .tech,
 .tech1{
   padding-left: 2.6rem;
-}
+} */
 
 .qualification__calender{
   font-size: var(--small-font-size);
@@ -797,6 +797,11 @@ button{
 
 .qualification__button.qualification__active{
   color: var(--first-color);
+}
+
+
+.qualification__subtitle3{
+  font-size: 100px;
 }
 
 
